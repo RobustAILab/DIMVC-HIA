@@ -23,8 +23,6 @@ Existing IMVC approaches face two fundamental challenges:
 
 To address these challenges, DIMVC-HIA integrates **hierarchical imputation** and **dual alignment mechanisms** into a unified learning framework.
 
-Specifically, DIMVC-HIA first estimates missing cluster assignments using cross-view contrastive similarity and subsequently reconstructs missing latent features using intra-view cluster statistics. Furthermore, an **energy-based semantic alignment** module promotes intra-cluster compactness, while a **contrastive assignment alignment** module enhances cross-view consistency and encourages confident, well-separated clustering predictions.
-
 Extensive experiments on four benchmark datasets demonstrate the effectiveness of DIMVC-HIA under varying levels of missing-view incompleteness.
 
 This repository provides the **official PyTorch implementation** of DIMVC-HIA.
@@ -38,15 +36,6 @@ The framework consists of three main stages:
 1. **View Feature Learning and Prediction:** View-specific autoencoders extract latent features, while a shared clustering predictor generates soft cluster assignments.
 2. **Hierarchical Imputation:** Missing cluster assignments are first estimated through cross-view semantic similarity, followed by cluster-guided latent feature imputation.
 3. **Dual Alignment:** Energy-based semantic alignment and contrastive assignment alignment jointly improve cluster compactness and cross-view consistency.
-
-## ✨ Key Features
-
-- **Hierarchical Imputation:** Adopts a two-stage strategy that first imputes missing cluster assignments and then reconstructs missing latent features.
-- **Cross-View Semantic Similarity:** Uses label-aware contrastive similarity to identify reliable reference views and reduce the impact of false negatives.
-- **Cluster-Guided Feature Imputation:** Leverages intra-view cluster prototypes to recover missing latent representations while preserving cluster structure.
-- **Energy-Based Semantic Alignment:** Employs cluster-specific energy-based models (EBMs) to promote intra-cluster compactness around low-energy anchors.
-- **Contrastive Assignment Alignment:** Encourages consistent cluster assignments across views while improving prediction confidence and cluster separation.
-- **Robust Incomplete Multi-View Clustering:** Demonstrates strong performance across different missing-view ratios, including severe incompleteness.
 
 ## ⚙️ Requirements
 
@@ -163,11 +152,6 @@ If you find this repository useful in your research, please cite our paper:
 ## 📬 Contact
 
 For questions regarding the implementation, experimental results, or research collaboration, please open an issue in this repository or contact:
-
-**Dr. Lusi Li**  
-Department of Computer Science  
-Old Dominion University  
-Email: lusili@cs.odu.edu
 
 ## 🙏 Acknowledgments
 
