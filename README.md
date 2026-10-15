@@ -33,8 +33,6 @@ This repository provides the **official PyTorch implementation** of DIMVC-HIA.
 
 ![DIMVC-HIA Framework](./DIMVC-HIA.png)
 
-*Overview of the proposed DIMVC-HIA framework (Figure 1 in the paper).*
-
 The framework consists of three main stages:
 
 1. **View Feature Learning and Prediction:** View-specific autoencoders extract latent features, while a shared clustering predictor generates soft cluster assignments.
