@@ -31,6 +31,8 @@ This repository provides the **official PyTorch implementation** of DIMVC-HIA.
 
 ## 🏗️ Framework
 
+![DIMVC-HIA Framework](./images/DIMVC-HIA.png)
+
 *Overview of the proposed DIMVC-HIA framework (Figure 1 in the paper).*
 
 The framework consists of three main stages:
